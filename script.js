@@ -7,13 +7,15 @@ container.addEventListener("click", () => {
   container.classList.add("slide", "no-load");
   const rows = container.querySelectorAll(".row");
   const cells = container.querySelectorAll(".cell");
-
   cells.forEach((cell) => {
     cell.classList.add("flip");
   });
   const lastRow = rows[rows.length - 1];
   const lastCell = cells[cells.length - 1];
-  lastRow.addEventListener("animationend", () => {
+  lastRow.addEventListener("animationstart", () => {
+    console.log("Animation started");
+  });
+  lastCell.addEventListener("animationend", () => {
     cells.forEach((cell) => {
       cell.classList.remove("flip");
     });
