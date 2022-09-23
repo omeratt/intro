@@ -12,9 +12,6 @@ container.addEventListener("click", () => {
   });
   const lastRow = rows[rows.length - 1];
   const lastCell = cells[cells.length - 1];
-  lastRow.addEventListener("animationstart", () => {
-    console.log("Animation started");
-  });
   lastCell.addEventListener("animationend", () => {
     cells.forEach((cell) => {
       cell.classList.remove("flip");
