@@ -15,8 +15,7 @@ body {
   padding-top: 15vh;
   /* padding-left: 25px; */
   /* margin: 0 auto; */
-  /* overflow: hidden; */
-  /* overscroll-behavior-y: auto; */
+  overflow-x: hidden;
 }
 
 .container {
@@ -25,7 +24,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--unit);
-  /* overflow: hidden; */
+  overflow-x: inherit;
+
   align-items: center;
 }
 
@@ -272,7 +272,7 @@ body {
 }
 
 .container.duplicate .row {
-  translate: var(--container-width);
+  translate: calc(var(--container-width) * 3);
 }
 
 .container.slide .container.duplicate .row {
