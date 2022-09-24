@@ -16,7 +16,7 @@ body {
   /* padding-left: 25px; */
   /* margin: 0 auto; */
   /* overflow: hidden; */
-  overscroll-behavior-y: auto;
+  /* overscroll-behavior-y: auto; */
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--unit);
-  overflow: hidden;
+  /* overflow: hidden; */
   align-items: center;
 }
 
