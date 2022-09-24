@@ -5,7 +5,7 @@
   --purple: #bf85bf;
   --background: #1a2b34;
   --gray: #465862;
-  --unit: 10px;
+  --unit: 12px;
   --container-width: 750px;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .container {
   position: relative;
-  min-width: var(--container-width);
+  /* min-width: var(--container-width); */
   display: flex;
   flex-direction: column;
   gap: var(--unit);
@@ -56,7 +56,7 @@ body {
   border-radius: 1000px;
 }
 .flip {
-  animation: flip 1s calc(var(--delay) * 100ms + 500ms) forwards;
+  animation: flip 3s calc(var(--delay) * 100ms + 500ms) forwards;
 }
 @keyframes flip {
   0% {
@@ -261,7 +261,7 @@ body {
   }
 
   100% {
-    translate: calc(var(--container-width) * 2 * var(--direction, 1));
+    translate: calc(var(--container-width) * 6 * var(--direction, 1));
     scale: -2;
   }
 }
@@ -285,8 +285,13 @@ body {
 .container.slide .container.duplicate .row:nth-child(2n) {
   --direction: 1;
 }
+@media screen and (min-width: 768px) and (max-height: 800px) {
+  :root {
+    --unit: 11px;
+  }
+}
 @media screen and (max-width: 768px) {
   :root {
-    --unit: 12px;
+    --unit: 6px;
   }
 }
