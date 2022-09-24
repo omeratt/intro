@@ -15,7 +15,8 @@ body {
   padding-top: 15vh;
   /* padding-left: 25px; */
   /* margin: 0 auto; */
-  overflow: hidden;
+  /* overflow: hidden; */
+  overscroll-behavior-y: auto;
 }
 
 .container {
