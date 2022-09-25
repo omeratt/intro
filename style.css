@@ -46,9 +46,6 @@ body {
   animation: none;
   translate: 0;
 }
-/* :not(.duplicate) > .cell {
-  animation: load-cell 1s calc(var(--delay) * 100ms + 900ms) forwards;
-} */
 
 .cell {
   height: 100%;
@@ -57,7 +54,7 @@ body {
   border-radius: 1000px;
 }
 .flip {
-  animation: flip 3s calc(var(--delay) * 100ms + 500ms) forwards;
+  animation: flip 3.5s calc(var(--delay) * 100ms + 500ms) forwards;
 }
 @keyframes flip {
   0% {
@@ -276,7 +273,7 @@ body {
 }
 
 .container.slide .container.duplicate .row {
-  animation: slide 1s calc((var(--delay) - 1) * 100ms - 150ms) reverse both;
+  animation: slide 1.5s calc((var(--delay) - 1) * 100ms - 150ms) reverse both;
 }
 
 .container.slide .container.duplicate .row:nth-child(15n-1) {
