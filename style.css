@@ -10,13 +10,7 @@
 }
 * {
   box-sizing: border-box;
-  overflow: hidden;
-}
-.container:cell {
-  transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0);
-}
-.cell {
-  transition: 5500ms skew;
+  overflow-x: hidden;
 }
 body {
   background: var(--background);
@@ -27,9 +21,12 @@ body {
   /* margin: 0 auto; */
   /* overflow-x: hidden; */
 }
-
+.row {
+  overflow-y: hidden;
+}
 .container {
   /* width: 375px; */
+  overflow-y: hidden;
 
   position: relative;
   display: flex;
